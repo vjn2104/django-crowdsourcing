@@ -56,6 +56,7 @@ class QuestionInline(admin.StackedInline):
     model = Question
     extra = 3
     form = QuestionForm
+    sortable_field_name='order'
 
 
 def _flickr_group_choices():
